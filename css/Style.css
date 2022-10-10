@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 99%;
+
+
+
+
+}
+
+body::after {
+    content: "";
+    background: -webkit-linear-gradient(90deg, rgb(9, 50, 86), rgb(100, 176, 251));
+    background: linear-gradient(90deg, rgb(9, 50, 86), rgb(100, 176, 251));
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}

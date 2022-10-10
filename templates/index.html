@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" type="text/css"
+          href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Style.css" />
+
+    <script defer src="https://kit.fontawesome.com/8b01a05d6a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-center">Welcome to Survey Creator</h1>
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="form-row">
+            <div class="row">
+                <div class="col">
+                    <input id="surveyQuestion" type="text" class="form-control my-5" placeholder="Write Your Question">
+                </div>
+            </div>
+            <div id="surveyOptions">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control my-1" placeholder="Write Your Answer" name="surveyOption">
+                    </div>
+                </div>
+                <div class="row" id="option2">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control my-1" placeholder="Write Your Answer" name="surveyOption">
+                    </div>
+                    <div class="col-sm-2 my-auto">
+                        <!--                    <i class="fa-sharp fa-solid fa-circle-plus"></i>-->
+                        <button onclick="deleteOption(2)" name="deleteButton" type="button" class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <button id="addOptionBtn" type="button" class="btn btn-primary my-2">Add Option</button>
+        <button id="createSurvey" type="button" class="btn btn-success my-2">Create Survey</button>
+    </form>
+</div>
+<script defer src="../js/Helpers.js"></script>
+<script  defer src="../js/Script.js"></script>
+
+</body>
+</html>
